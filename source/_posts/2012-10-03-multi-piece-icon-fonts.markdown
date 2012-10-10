@@ -15,7 +15,7 @@ I've been slowly moving the icons we use on our site into a font. If you're not 
 ## The Problem:
 Many of our icons utilize multiple colors for different parts.
 
-![Picture](https://coderwall-assets-0.s3.amazonaws.com/uploads/picture/file/182/fig1.png)
+![Picture](/media/2012/images/multi-piece-icon-fonts-fig1.png)
 
 *This image is a bad example because it's all white and you can't actually see the 30% transparent black.*
 
@@ -45,4 +45,4 @@ Unfortunately, after converting the font into the various files needed for cross
 ### Position absolute
 Currently we are only using the zero-width characters when they're all the same color and opacity. For glyphs that require multiple colors or opacity we're having to use `position: absolute;` to manually overlay them.
 
-It's not ideal, but it works. Hopefully in the future the issues I've noted will be resolved.
+It's not ideal, but it works. Hopefully the issues I've noted will be resolved in the future.
