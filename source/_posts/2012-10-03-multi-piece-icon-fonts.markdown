@@ -46,3 +46,20 @@ Unfortunately, after converting the font into the various files needed for cross
 Currently we are only using the zero-width characters when they're all the same color and opacity. For glyphs that require multiple colors or opacity we're having to use `position: absolute;` to manually overlay them.
 
 It's not ideal, but it works. Hopefully the issues I've noted will be resolved in the future.
+
+## A Demo and an Update:
+In the time between me writing the first part of this article and this demo
+part it would appear that the rendering issues I encountered are fixed! I still
+have more testing to do and will make updates here if/when they change.
+
+### Normal
+{% jsfiddle pEWUn result,html,css %}
+
+### Zero Width
+{% jsfiddle 3PFtp result,html,css %}
+
+### Negative Kerning
+*Note the `text-rendering: optimizeLegibility;`.*
+{% jsfiddle ZJx9A result,html,css %}
+
+[Download .glyph files](http://cl.ly/1i1J2h471M0y/download/multi-piece-icon-font.zip)
